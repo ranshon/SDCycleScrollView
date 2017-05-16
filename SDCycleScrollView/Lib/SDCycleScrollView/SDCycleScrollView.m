@@ -299,6 +299,9 @@ NSString * const ID = @"cycleCell";
     
     [self setupPageControl];
     [self.mainView reloadData];
+    if (imagePathsGroup.count > 0) {
+        [self.backgroundImageView removeFromSuperview];
+    }
 }
 
 - (void)setImageURLStringsGroup:(NSArray *)imageURLStringsGroup
